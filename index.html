@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Building 'good enough' digital workflows in the field</title>
+
+		<meta name="description" content="Building 'good enough' digital workflows in the field">
+		<meta name="author" content="Stuart Grieve">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/night.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+
+<section data-markdown>
+<textarea data-template>
+
+![a forest at dusk](img/intro3.png) <!-- .element width="85%" class="plain"-->
+
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Where do RSEs work?
+
+We often have an image of RSE work as being entirely desk-based, but what happens when our work takes us away from our desks?
+
+</textarea>
+</section>
+
+
+<section>
+
+  <h3>European Forests</h3>
+  <div class="ulist">
+      <img class="" src="img/tall.jpg" alt="pine trees" width="30%" style="float: right">
+      <ul style="list-style: none; width: 65%;">
+        <li><p>UKRI FLF led by Emily Lines</p>
+        <li><p>Working to understand dynamics and competition between individual trees within diverse forests</p>
+        <li><p>High resolution 3D models of individual trees</p>
+
+        </li>
+        </li>
+        </li>
+      </ul>
+  </div>
+
+</section>
+
+
+<section data-markdown>
+<textarea data-template>
+
+![examples of 3d trees](img/3d.jpg) <!-- .element width="80%" -->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Study sites
+
+![Fundiv network](img/fundiv.jpeg) <!-- .element width="60%" -->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Data collection
+
+We collect data in a range of ways:
+
+- Small photogrammetry drones
+- Big LiDAR drones
+- Terrestrial Laser Scanning (TLS)
+- Hugging trees
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Data collection
+
+Small photogrammetry drones
+
+![Mavic mini](img/mavic-mini.jpeg) <!-- .element width="80%" -->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Data collection
+
+Big LiDAR drones
+
+![Ricopter](img/my-drone.jpg) <!-- .element width="50%" -->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Data collection
+
+Terrestrial Laser Scannering (TLS)
+
+![TLS](img/tls.jpg) <!-- .element width="35%" -->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Data collection
+
+Hugging trees
+
+![Me hugging a tree](img/dbh.jpeg) <!-- .element width="60%" -->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Data collection
+
+Datasets include:
+
+- 3D point clouds (TBs)
+- Aerial photographs (GBs)
+- Handwritten notes (kBs)
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Best practice
+
+Common advice we give (and maybe even follow!):
+
+- Offsite backups
+- Version control code
+- Validate/verify data on the fly
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Fieldwork challenges
+
+Data intensive fieldwork is complicated by:
+
+- Lack of reliable (or any) internet
+- No access to HPC or powerful desktop computers
+- Proprietary processing software often tied to fixed machines within a university
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Fieldwork challenges
+
+![](img/poland.jpg) <!-- .element width="60%" -->
+
+How do we follow these practices here?
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Risks
+
+1. Data loss/corruption
+1. Missing metadata
+1. Non-reproducible processing workflows
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+## Causes of data loss in the field
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Crashes
+
+![https://psflight.org/4658/dji-battery-failure-update-now-expanded-to-m200-serie-and-inspire-aircraft-crash-pics/](img/crash.webp) <!-- .element width="70%" -->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Onboard corruption
+
+- Complex instruments break in unexpected ways
+- Calibration errors
+- Sequential file systems
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Lost equipment
+
+Don't drop microSD cards on the forest floor!
+
+![A messy forest floor](img/floor.jpg) <!-- .element width="60%" -->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Damage in transit
+
+![https://giphy.com/gifs/say-charge-baggage-JGyxBm0yhj1fy](img/baggage.gif) <!-- .element width="30%" -->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Human error
+
+Fieldwork is exhausting:
+
+- Long days
+- Disrupted sleep
+- Stress
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Human error
+
+![https://oem.bmj.com/content/oemed/62/9/588.full.pdf](img/fatigue.png) <!-- .element width="100%" -->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+## Technology will not save us - people are key to minimising risks!
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Mitigating risks
+
+Backup practice:
+
+1. Foster ownership of instruments by team members
+1. Perform multiple physical backups daily - integrate backups into maintainence workflows
+1. Don't neglect paper data
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Mitigating risks
+
+Data quality/integrity:
+
+1. Develop transparent workflows to validate data **quickly**
+1. Document data processing workflows and plan what intermediate data is retained
+1. Only use backups for backups - run analysis on copies stored elsewhere
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Mitigating risks
+
+Human error:
+
+1. Distribute backups in multiple bags during transit
+1. Full training on use of instruments
+1. Build in periods of rest/recovery - needs funder support!
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### 'Good enough' lessons
+
+- People are key
+- Low tech can be better than high tech
+- Backups should be considered part of instrument maintainence
+- Plan for tiredness
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+## Thank you
+
+</textarea>
+</section>
+
+			</div>
+
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+        // Parallax background image
+        parallaxBackgroundImage: "img/bg4.jpg", //https://unsplash.com/photos/OYFHT4X5isg
+
+      	// Parallax background size
+      	parallaxBackgroundSize: "4200px 1800px",
+
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        math: {
+		           mathjax: 'reveal/plugin/MathJax/MathJax.js',
+		           config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	            },
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/search/search.js', async: true },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal/plugin/notes/notes.js', async: true },
+          { src: 'reveal/plugin/math/math.js', async: true },
+          { src: 'reveal/plugin/reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } },
+          { src: 'reveal/plugin/reveal-svg-fragment-big.js', condition: function() { return !!document.querySelector( '[data-svg-fragment-big]' ); } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
